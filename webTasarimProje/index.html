@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>WebBrain</title>
+</head>
+<body>
+
+    <div class="loading-screen">
+    <span class="loader"></span>
+    </div>
+    
+    <header>
+        <img src="img/logo-light.png" alt="logo" onclick='window.location.href="index.html"'>
+        <nav class="navbar-header">
+            <ul role="list">
+                <li><a href="index.html" class="current-header-nav">Anasayfa</a></li>
+                <li><a href="dersler.html">Derslerimiz</a></li>
+                <li><a href="kayit.html">Satın Al</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-button"><div class="bar"></div></div>
+    </header>
+
+    <main>
+        <section class="main-startup-section">
+            <article class="start-up-animation-cards">
+                <svg width="10em" height="10em" xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f7df1e"/><path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"/></svg>
+                <svg width="10em" height="10em" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"/><path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"/><path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"/></svg>  
+                <svg width="10em" height="10em" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"/><path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"/><path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"/></svg>
+                <svg width="10em" height="10em" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="14" fill="#8892BF"/><path d="M14.4392 10H16.1192L15.6444 12.5242H17.154C17.9819 12.5419 18.5986 12.7269 19.0045 13.0793C19.4184 13.4316 19.5402 14.1014 19.3698 15.0881L18.5541 19.4889H16.8497L17.6288 15.2863C17.7099 14.8457 17.6856 14.533 17.5558 14.348C17.426 14.163 17.146 14.0705 16.7158 14.0705L15.3644 14.0573L14.3661 19.4889H12.6861L14.4392 10Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.74092 12.5243H10.0036C10.9612 12.533 11.6552 12.8327 12.0854 13.4229C12.5156 14.0132 12.6576 14.8193 12.5115 15.8414C12.4548 16.3085 12.3289 16.7665 12.1341 17.2159C11.9474 17.6652 11.6878 18.0704 11.355 18.4317C10.9491 18.8898 10.5149 19.1805 10.0523 19.304C9.58969 19.4274 9.11076 19.489 8.61575 19.489H7.15484L6.69222 22H5L6.74092 12.5243ZM7.43485 17.9956L8.16287 14.0441H8.40879C8.49815 14.0441 8.5914 14.0396 8.6888 14.0309C9.33817 14.0221 9.87774 14.0882 10.308 14.2291C10.7462 14.37 10.8923 14.9031 10.7462 15.8282C10.5678 16.9296 10.2186 17.5727 9.69926 17.7577C9.1799 17.934 8.53053 18.0176 7.75138 18.0088H7.58094C7.53224 18.0088 7.48355 18.0043 7.43485 17.9956Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.4365 12.5243H21.1738L19.4329 22H21.1251L21.5878 19.489H23.0487C23.5437 19.489 24.0226 19.4274 24.4852 19.304C24.9479 19.1805 25.382 18.8898 25.7879 18.4317C26.1207 18.0704 26.3803 17.6652 26.567 17.2159C26.7618 16.7665 26.8877 16.3085 26.9444 15.8414C27.0905 14.8193 26.9486 14.0132 26.5183 13.4229C26.0881 12.8327 25.3942 12.533 24.4365 12.5243ZM22.5958 14.0441L21.8678 17.9956C21.9165 18.0043 21.9652 18.0088 22.0139 18.0088H22.1843C22.9635 18.0176 23.6128 17.934 24.1322 17.7577C24.6515 17.5727 25.0007 16.9296 25.1792 15.8282C25.3253 14.9031 25.1792 14.37 24.7409 14.2291C24.3107 14.0882 23.7711 14.0221 23.1217 14.0309C23.0243 14.0396 22.9311 14.0441 22.8417 14.0441H22.5958Z" fill="white"/></svg>
+            </article>
+
+            <article class="main-slogan-container">
+                <h1>Web Dünyasına Adım Atın! <br>HTML, CSS, JavaScript ve PHP'yi Keşfedin!</h1>
+                <button onclick='window.location.href="dersler.html"'>Hemen Göz At!</button>
+            </article>
+        </section>
+
+        <section class="main-page-section-2">
+            <article class="hidden">
+                <p>Web geliştirme dünyasına giriş yapmaya hazır mısınız? Siz de modern web teknolojilerini öğrenerek kendi web sitelerinizi oluşturabilirsiniz.
+                    HTML, CSS, JavaScript ve PHP gibi temel dilleri öğrenerek, dijital dünyanın kapılarını aralayabilir ve kariyerinizi ilerletebilirsiniz.</p>
+            </article>
+
+            <article class="hidden">
+                <svg width="10em" height="10em" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><circle style="fill:#FAD24D;" cx="256" cy="256" r="256"/><ellipse style="fill:#EDB937;" cx="256" cy="421.646" rx="182.284" ry="14.371"/><path style="fill:#666666;" d="M65.982,67.223h380.037c12.486,0,22.702,10.216,22.702,22.702v234.107H43.282V89.924c0-12.486,10.216-22.702,22.702-22.702H65.982z"/><g><path style="fill:#FFFFFF;" d="M58.694,308.617h394.609V89.924c0-3.979-3.309-7.288-7.285-7.288H65.982c-3.977,0-7.285,3.309-7.285,7.288v218.693H58.694z"/><path style="fill:#FFFFFF;" d="M468.718,324.031v24.827c0,12.488-11.26,22.702-25.024,22.702H68.307c-13.764,0-25.024-10.214-25.024-22.702v-24.827H468.72H468.718z"/></g><circle style="fill:#B6B6B8;" cx="256" cy="346.803" r="7.816"/><path style="fill:#C2C2C4;" d="M305.066,407.273l36.095,11.566H170.836l29.123-11.566v-35.713h105.105v35.713H305.066z"/><path style="fill:#ECF0F1;" d="M199.961,407.273h105.106l36.095,11.566v4.98h-85.16h-85.164v-4.98L199.961,407.273z"/><path style="fill:#919191;" d="M199.961,371.559h105.106v35.713L199.961,371.559z"/><rect x="75.849" y="97.5" style="fill:#20D0C2;" width="40.742" height="7.016"/><rect x="121.303" y="97.5" style="fill:#FF5B62;" width="72.269" height="7.016"/><g><rect x="197.055" y="97.5" style="fill:#FAD24D;" width="61.53" height="7.016"/><rect x="118.648" y="126.363" style="fill:#FAD24D;" width="21.616" height="7.016"/></g><rect x="142.761" y="126.363" style="fill:#FF5B62;" width="38.345" height="7.016"/><g><rect x="182.953" y="126.363" style="fill:#20D0C2;" width="32.642" height="7.016"/><rect x="75.592" y="138.689" style="fill:#20D0C2;" width="37.976" height="7.016"/></g><rect x="117.95" y="138.689" style="fill:#FAD24D;" width="67.348" height="7.016"/><rect x="116.133" y="153.42" style="fill:#FF5B62;" width="37.976" height="7.016"/><rect x="158.49" y="153.42" style="fill:#20D0C2;" width="67.348" height="7.016"/><rect x="82.359" y="167.503" style="fill:#FAD24D;" width="37.976" height="7.016"/><rect x="125.355" y="167.503" style="fill:#20D0C2;" width="27.177" height="7.016"/><rect x="158.93" y="167.503" style="fill:#FF5B62;" width="76.311" height="7.016"/><g><rect x="240.83" y="167.503" style="fill:#20D0C2;" width="27.177" height="7.016"/><rect x="74.245" y="182.234" style="fill:#20D0C2;" width="101.622" height="7.016"/></g><rect x="180.298" y="182.234" style="fill:#FAD24D;" width="27.177" height="7.016"/><rect x="211.347" y="182.234" style="fill:#FF5B62;" width="37.976" height="7.016"/><g><rect x="120.375" y="111.093" style="fill:#FFFFFF;" width="2.807" height="8.416"/><rect x="193.193" y="138.689" style="fill:#FFFFFF;" width="2.807" height="8.416"/></g><rect x="75.849" y="202.994" style="fill:#20D0C2;" width="40.742" height="7.016"/><rect x="121.303" y="202.994" style="fill:#FF5B62;" width="72.269" height="7.016"/><g><rect x="197.055" y="202.994" style="fill:#FAD24D;" width="61.53" height="7.016"/><rect x="118.648" y="231.847" style="fill:#FAD24D;" width="21.616" height="7.016"/></g><rect x="142.761" y="231.847" style="fill:#FF5B62;" width="38.345" height="7.016"/><g><rect x="182.953" y="231.847" style="fill:#20D0C2;" width="32.642" height="7.016"/><rect x="75.592" y="244.183" style="fill:#20D0C2;" width="37.976" height="7.016"/></g><rect x="117.95" y="244.183" style="fill:#FAD24D;" width="67.348" height="7.016"/><g><rect x="120.375" y="216.577" style="fill:#FFFFFF;" width="2.807" height="8.416"/><rect x="193.193" y="244.183" style="fill:#FFFFFF;" width="2.807" height="8.416"/></g><g><rect x="290.223" y="97.5" style="fill:#DCE3DB;" width="147.352" height="33.984"/><path style="fill:#DCE3DB;" d="M290.221,136.298h70.178v44.852h-70.178V136.298z"/><path style="fill:#DCE3DB;" d="M367.398,136.298h70.178v44.852h-70.178V136.298z"/><path style="fill:#DCE3DB;" d="M290.423,187.581h146.953v2.172H290.423V187.581z M290.423,208.115h96.534v2.172h-96.534V208.115zM290.423,201.269h146.953v2.172H290.423V201.269z M290.423,194.426h146.953v2.172H290.423V194.426z"/><path style="fill:#DCE3DB;" d="M290.048,215.622h43.793v43.42h-43.793V215.622z M393.961,215.622h43.795v43.42h-43.795V215.622zM342.005,215.622h43.793v43.42h-43.793V215.622z"/><path style="fill:#DCE3DB;" d="M290.423,265.088h146.953v2.172H290.423V265.088z M290.423,285.622h96.534v2.172h-96.534V285.622zM290.423,278.777h146.953v2.172H290.423V278.777z M290.423,271.934h146.953v2.172H290.423V271.934z"/></g></svg>
+            </article>
+        </section>
+
+        <section class="main-page-section-3">
+            <article class="hidden animated-text-article">
+                <h2 class="animated-text">Sıfırdan kodlama öğrenmek hiç bu kadar kolay olmamıştı!</h2>
+            </article>
+            <article class="hidden">
+                <svg width="12em" height="12em" version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <style type="text/css"> .stone_een{fill:#42bdff;} .st0{fill:#42bdff;} </style> <path class="stone_een" d="M30,22v3c0,0.552-0.448,1-1,1h-1c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1v-7.539l-11.198-0.896 C16.621,12.822,16.337,13,16,13c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1c0.396,0,0.732,0.235,0.894,0.57l11.186,0.895 c0.516,0.041,0.92,0.479,0.92,0.997V21C29.552,21,30,21.448,30,22z M16,19.725c-0.547,0-1.094-0.111-1.603-0.334L8,16.592v2.227 c0,1.136,0.642,2.175,1.658,2.683l0,0C11.655,22.501,13.827,23,16,23s4.345-0.499,6.341-1.497l0,0C23.358,20.995,24,19.956,24,18.82 v-2.227l-6.397,2.799C17.094,19.614,16.547,19.725,16,19.725z M29.906,11.084L17.202,5.526C16.819,5.358,16.41,5.275,16,5.275 c-0.41,0-0.819,0.084-1.202,0.252L2.094,11.084c-0.799,0.35-0.799,1.483,0,1.832l12.703,5.559c0.765,0.334,1.641,0.334,2.405,0 l9.416-4.121l-9.438-0.755C16.843,13.858,16.434,14,16,14c-1.103,0-2-0.897-2-2c0-1.103,0.897-2,2-2 c0.552,0,1.062,0.224,1.431,0.609l10.729,0.858c0.842,0.067,1.525,0.666,1.751,1.445C30.704,12.561,30.703,11.433,29.906,11.084z"/> </g></svg>
+                <p>Profesyonel eğitmenler eşliğinde adım adım ilerleyerek, gerçek projelerle pratik yapın.</p>
+            </article>
+        </section>
+
+        <section class="user-review-section">
+            <p class="user-review-header-text hidden">Kullanıcılarımızın Yorumları</p>
+            <article class="container-down">
+
+                <div class="hidden card card-1">
+                    <div class="card-user">
+                        <img src="img/image-colton.jpg" alt="pp">
+                        <div class="user-info">
+                            <p class="text-name">Mert</p>
+                            <p class="text-stat">Mezun</p>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="text-card">
+                            " Bu kurs gerçekten harika! HTML, CSS, JavaScript ve PHP'yi öğrenmek için daha iyi bir yer bulamazdınız. Kesinlikle tavsiye ederim! "
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hidden card card-2">
+                    <div class="card-user">
+                        <img src="img/image-irene.jpg" alt="pp">
+                        <div class="user-info">
+                            <p class="text-name">Aylin</p>
+                            <p class="text-stat">Mezun</p>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="text-card">
+                            " Kurs içeriği çok açıklayıcı ve öğrenmeyi kolaylaştırıyor. Özellikle PHP'yi anlamakta zorlanıyordum ama bu kurs sayesinde artık çok daha rahatım. "
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hidden card card-3">
+                    <div class="card-user">
+                        <img src="img/image-anne.jpg" alt="pp">
+                        <div class="user-info">
+                            <p class="text-name">Defne</p>
+                            <p class="text-stat">Mezun</p>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="text-card">
+                            " HTML, CSS, JavaScript ve PHP kursunu bitirdim ve gerçekten çok memnun kaldım. Öğrenmek isteyen herkese tavsiye ederim. Teşekkürler! "
+                        </p>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="tercih-section">
+            <article>
+                <h2 class="hidden">Neden Bizi Tercih Etmelisiniz?</h2>
+            </article>
+            <article>
+                <div class="tercih-block hidden">
+                    <svg width="7em" height="7em" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" ><path d="M0 0h48v48H0z" fill="none"/><g id="Shopicon"><path fill="var(--clr-neutral)" d="M14.037,22c0.239-6.944,1.708-13.047,3.885-17.053C10.46,7.326,4.9,13.96,4.101,22H14.037z"/><path fill="var(--clr-neutral)" d="M14.037,26H4.101C4.9,34.04,10.46,40.674,17.922,43.053C15.745,39.047,14.276,32.944,14.037,26z"/><path fill="var(--clr-neutral)" d="M33.963,22h9.936C43.1,13.96,37.54,7.326,30.078,4.947C32.255,8.953,33.724,15.056,33.963,22z"/><path fill="var(--clr-neutral)" d="M33.963,26c-0.239,6.944-1.708,13.047-3.885,17.053C37.54,40.674,43.1,34.04,43.899,26H33.963z"/><path fill="var(--clr-neutral)" d="M29.958,26H18.042C18.466,37.815,22.539,44,24,44S29.534,37.815,29.958,26z"/><path fill="var(--clr-neutral)" d="M24,4c-1.461,0-5.534,6.185-5.958,18h11.916C29.534,10.185,25.461,4,24,4z"/></g></svg>
+                    <p>Uluslararası</p>
+                </div>
+
+                <div class="tercih-block hidden">
+                    <svg height="7em" width="7em" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><ellipse style="fill:#785353;" cx="158.255" cy="79.127" rx="55.855" ry="46.545"/><g><path style="fill:#6E4848;" d="M193.164,114.036c-30.848,0-55.855-20.84-55.855-46.545c0-13.874,7.324-26.295,18.881-34.822c-29.883,0.912-53.79,21.333-53.79,46.458c0,25.706,25.007,46.545,55.855,46.545c14.199,0,27.12-4.451,36.973-11.724C194.538,113.97,193.861,114.036,193.164,114.036z"/><ellipse style="fill:#6E4848;" cx="158.255" cy="195.491" rx="130.327" ry="125.673"/></g><path style="fill:#643C3E;" d="M102.4,195.491c0-56.922,39.27-104.941,93.091-120.399c-11.806-3.391-24.287-5.274-37.236-5.274c-71.978,0-130.327,56.265-130.327,125.673c0,69.406,58.349,125.673,130.327,125.673c12.949,0,25.43-1.883,37.236-5.274C141.67,300.432,102.4,252.411,102.4,195.491z"/><path style="fill:#00C3FF;" d="M392.078,6.109c-43.234,7.165-77.654,42.605-83.814,85.994c-5.553,39.113,11.095,74.622,39.074,96.116c-7.851,14.351-16.677,25.213-22.867,31.943c-2.43,2.643-0.049,6.856,3.47,6.145c12.417-2.509,32.901-8.365,50.961-21.548c13.588,4.266,28.386,5.797,43.767,3.877c44.417-5.545,80.98-40.595,87.997-84.803C521.759,53.936,462.05-5.487,392.078,6.109z"/><circle style="fill:#87DCFF;" cx="409.6" cy="107.055" r="83.782"/><g><path style="fill:#959CB5;" d="M83.782,293.236H65.164c-10.283,0-18.618-8.335-18.618-18.618V256c0-10.283,8.335-18.618,18.618-18.618h18.618V293.236z"/><path style="fill:#959CB5;" d="M232.727,237.382h18.618c10.283,0,18.618,8.335,18.618,18.618v18.618c0,10.283-8.335,18.618-18.618,18.618h-18.618V237.382z"/></g><path style="fill:#E6AF78;" d="M299.323,407.094l-83.066-34.611c-6.938-2.89-11.457-9.67-11.457-17.187v-34.132h-93.091v34.133c0,7.516-4.52,14.295-11.457,17.187l-83.066,34.611C6.779,411.429,0,421.598,0,432.873v55.855c0,10.282,8.336,18.618,18.618,18.618h279.273c10.282,0,18.618-8.336,18.618-18.618v-55.855C316.509,421.598,309.73,411.429,299.323,407.094z"/><path style="fill:#D29B6E;" d="M111.709,321.164v34.133c0,2.882-0.838,5.567-2.049,8.054l16.948,9.416c9.656,5.364,20.6,8.2,31.646,8.2c11.048,0,21.989-2.836,31.646-8.2l16.947-9.415c-1.211-2.488-2.049-5.171-2.049-8.054v-34.134H111.709z"/><path style="fill:#00C3FF;" d="M316.509,488.727v-55.855c0-11.274-6.779-21.444-17.186-25.779l-67.87-28.279c-36.807,53.962-73.199,54.058-73.199,54.058s-36.392-0.095-73.199-54.058l-67.87,28.279C6.779,411.429,0,421.598,0,432.873v55.855c0,10.282,8.336,18.618,18.618,18.618h279.273C308.173,507.345,316.509,499.009,316.509,488.727z"/><path style="fill:#F0C087;" d="M201.593,174.495c-47.061,30.946-103.572,34.894-126.266,35.127c-5.459,0.056-9.72,4.714-9.225,10.152l6.589,72.468c1.116,12.271,8.229,23.195,19,29.178l48.482,26.934c11.247,6.248,24.92,6.248,36.167,0l48.482-26.934c10.771-5.983,17.884-16.908,19-29.178l7.043-77.475c0.292-3.216-1.078-6.358-3.674-8.28c-6.719-4.975-20.52-15.91-33.432-30.6C210.679,172.386,205.488,171.935,201.593,174.495z"/><path style="fill:#E6AF78;" d="M119.318,269.431l-4.513-63.184c-16.612,2.61-30.647,3.272-39.509,3.368c-5.453,0.058-9.688,4.719-9.194,10.149l6.589,72.476c1.116,12.272,8.229,23.196,19.001,29.181l48.481,26.934c4.995,2.775,10.473,4.245,16.001,4.556c-7.204-9.027-12.99-17.221-17.62-24.444C127.215,310.775,120.815,290.389,119.318,269.431z"/><path style="fill:#FFFFFF;" d="M409.645,63.418c-5.146,0-9.354-4.168-9.354-9.309s4.118-9.309,9.264-9.309h0.091c5.146,0,9.309,4.168,9.309,9.309S414.791,63.418,409.645,63.418z"/><g><path style="fill:#643C3E;" d="M139.646,256c-3.464,0-6.791-1.936-8.391-5.263c-0.946-1.964-4.554-4.046-9.382-4.046s-8.436,2.082-9.382,4.046c-2.227,4.631-7.754,6.582-12.428,4.34c-4.628-2.237-6.572-7.8-4.337-12.432c4.266-8.849,14.529-14.572,26.147-14.572s21.882,5.723,26.146,14.572c2.237,4.631,0.291,10.196-4.337,12.432C142.373,255.704,141,256,139.646,256z"/><path style="fill:#643C3E;" d="M212.409,256c-3.464,0-6.791-1.936-8.391-5.263c-0.946-1.964-4.554-4.046-9.382-4.046c-4.828,0-8.436,2.082-9.382,4.046c-2.218,4.631-7.764,6.582-12.428,4.34c-4.628-2.237-6.572-7.8-4.337-12.432c4.264-8.849,14.527-14.572,26.146-14.572s21.882,5.723,26.146,14.572c2.237,4.631,0.291,10.196-4.337,12.432C215.137,255.704,213.763,256,212.409,256z"/></g><path style="fill:#FFFFFF;" d="M418.909,144.291V97.745c5.146,0,9.309-4.168,9.309-9.309s-4.163-9.309-9.309-9.309h-18.618c-5.146,0-9.309,4.168-9.309,9.309s4.163,9.309,9.309,9.309v46.545c-5.146,0-9.309,4.168-9.309,9.309c0,5.141,4.163,9.309,9.309,9.309h18.618c5.146,0,9.309-4.168,9.309-9.309C428.218,148.459,424.055,144.291,418.909,144.291z"/><path style="fill:#7F8499;" d="M244.61,283.927c-8.195,5.655-32.943,18.618-86.356,18.618c-5.146,0-9.309,4.168-9.309,9.309c0,5.141,4.163,9.309,9.309,9.309c76.082,0,100.618-24.372,103.163-27.15c2.6-2.84,2.851-10.086-6.458-10.086H244.61z"/><path style="fill:#464655;" d="M174.527,320.727c1.449-2.648,2.346-5.641,2.346-8.873c0-3.585-1.062-6.902-2.817-9.742c-4.983,0.262-10.198,0.433-15.801,0.433c-5.146,0-9.309,4.168-9.309,9.309c0,5.141,4.163,9.309,9.309,9.309C164.001,321.164,169.357,320.986,174.527,320.727z"/><g><path style="fill:#00AAF0;" d="M248.328,385.845l-16.874-7.031c-36.808,53.962-73.2,54.058-73.2,54.058s-36.392-0.095-73.199-54.058l-16.874,7.031c28.444,42.453,56.895,57.453,74.122,62.748c3.903,1.2,6.641,4.695,6.641,8.778v22.046c0,5.141,4.168,9.309,9.309,9.309c5.141,0,9.309-4.168,9.309-9.309v-22.037c0-4.083,2.74-7.58,6.644-8.78C191.4,443.318,219.866,428.326,248.328,385.845z"/><path style="fill:#00AAF0;" d="M48.667,445.901L7.494,413.876C2.786,418.944,0,425.673,0,432.873v55.855c0,10.282,8.336,18.618,18.618,18.618h37.236v-46.749C55.855,454.851,53.201,449.428,48.667,445.901z"/><path style="fill:#00AAF0;" d="M267.842,445.901l41.173-32.024c4.708,5.068,7.494,11.797,7.494,18.996v55.855c0,10.282-8.336,18.618-18.618,18.618h-37.236v-46.749C260.655,454.851,263.308,449.428,267.842,445.901z"/></g></svg>
+                    <p>7/24 Aktif</p>
+                </div>
+
+                <div class="tercih-block hidden">
+                    <svg width="7em" height="7em" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-congratulation-hat"><defs></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(0.000000, 1.000000)" fill="var(--clr-neutral)"><g transform="translate(0.000000, 7.000000)"><path d="M8,5.099 L4.125,2.64 L4.125,5.794 C4.125,5.794 4.125,6.342 4.48,6.427 C5.594,6.691 6.759,6.943 8,6.943 C9.27,6.943 10.485,6.752 11.604,6.4 C11.875,6.342 11.875,5.849 11.875,5.849 L11.875,2.64 L8,5.099 L8,5.099 Z" class="si-glyph-fill"></path><path d="M1.246,0.066 L0.766,0.066 C0.355,1.63 0.052,6.603 0.052,6.912 C0.052,6.94 0.059,6.969 0.065,6.996 L1.948,6.996 C1.954,6.969 1.959,6.94 1.959,6.912 C1.958,6.604 1.654,1.631 1.246,0.066 L1.246,0.066 Z" class="si-glyph-fill"></path></g><path d="M8,0.062 L0,5.043 L1.33,6.042 L6.885,4.784 C6.977,4.255 7.413,3.843 7.969,3.843 C8.59,3.843 9.094,4.347 9.094,4.968 C9.094,5.589 8.59,6.093 7.969,6.093 C7.655,6.093 7.385,5.952 7.186,5.741 L2.374,6.83 L8,10.702 L16,5.043 L8,0.062 L8,0.062 Z" class="si-glyph-fill"></path></g></g></svg>
+                    <p>Sertifikalı</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <img src="img/logo-light.png" alt="logo" onclick='window.location.href="index.html"'>
+        <article>
+            <p>Kısayollar</p>
+            <nav>
+                <ul role="list">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="dersler.html">Derslerimiz</a></li>
+                    <li><a href="kayit.html">Satın Al</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </article>
+        <article>
+            <p>Önerdiğimiz Makaleler</p>
+            <nav>
+                <ul role="list">
+                    <li><a href="https://en.wikipedia.org/wiki/Web_development">Wikipedia</a></li>
+                    <li><a href="https://www.w3schools.com/whatis/">W3Schools</a></li>
+                    <li><a href="https://blog.hubspot.com/website/website-development">HubSpot Blog</a></li>
+                    <li><a href="https://brainstation.io/career-guides/what-is-web-development">BrainStation</a></li>
+                </ul>
+            </nav>
+        </article>
+        <article>
+            <p>Sponsorlarımız</p>
+            <nav>
+                <ul role="list">
+                    <li><a href="https://web.dev/">web.dev</a></li>
+                    <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                    <li><a href="https://www.semrush.com/">Semrush</a></li>
+                    <li><a href="https://www.webfx.com/">WebFX</a></li>
+                </ul>
+            </nav>
+        </article>
+        <div class="copyright-container"><p>WebBrain&copy; 2024 Tüm Hakları Saklıdır.</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Kurs Fiyatları</title>
+</head>
+<body>
+        <div class="loading-screen">
+        <span class="loader"></span>
+        </div>
+    <header>
+        <img src="img/logo-light.png" alt="logo" onclick='window.location.href="index.html"'>
+        <nav class="navbar-header">
+            <ul role="list">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="dersler.html">Derslerimiz</a></li>
+                <li><a href="kayit.html" class="current-header-nav">Satın Al</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-button"><div class="bar"></div></div>
+    </header>
+
+    <main class="satin-alim-main">
+        <section class="satin-alim-section">
+
+            <div class="satin-alim-form">
+            <div class="satin-alim-area">
+        <div class="satin-alim-block">
+        <label>
+            <input type="radio" name="yas" id="gencRadio" value="genc"><p><b>Genç</b> - 50 TL</p>
+        </label>
+        <label>
+            <input type="radio" name="yas" id="yetiskinRadio" value="yetiskin"><p><b>Yetişkin</b> - 100 TL</p>
+        </label>
+        </div>
+            </div>
+            <div class="line-y"></div>
+    
+            <div class="satin-alim-area">
+        <div class="satin-alim-block">
+        <label>
+            <input type="checkbox" id="htmlCb"><p><b>HTML</b> - 50 TL</p>
+        </label>
+        <label>
+            <input type="checkbox" id="cssCb"><p><b>CSS</b> - 50 TL</p>
+        </label>
+        </div>
+
+        <div class="satin-alim-block">
+        <label>
+            <input type="checkbox" id="jsCb"><p><b>JavaScript</b> - 100 TL</p>
+        </label>
+        <label>
+            <input type="checkbox" id="phpCb"><p><b>PHP</b> - 150 TL</p>
+        </label>
+        </div>
+            </div>
+            <div class="line-y"></div>
+
+            <div class="satin-alim-area">
+        <div class="satin-alim-block-date">
+        <label for="baslangicDate"><p><b>Başlangıç Tarihi:</b></p></label>
+        <input type="date" id="baslangicDate" name="baslangicDate">
+    
+        <label for="bitisDate"><p><b>Bitiş Tarihi:</b></p></label>
+        <input type="date" id="bitisDate" name="bitisDate">
+        </div>
+    </div>
+        <div class="line-y"></div>
+    
+        <div class="satin-alim-block">
+        <button id="hesaplaBtn">Hesapla</button>
+        </div>
+            </div>
+        </section>
+
+        <section class="fis-section">
+        <article class="fis-article" id="fis">
+
+            <div class="fis-block">
+                <p id="statu-durumu"></p>
+            </div>
+
+            <div class="fis-block">
+                <p id="ders-durumu"></p>
+            </div>
+
+            <div class="fis-block">
+                <p id="tarih-baslangic-durumu"></p>
+            </div>
+
+            <div class="fis-block">
+                <p id="tarih-bitis-durumu"></p>
+            </div>
+
+            <div class="fis-toplam-text">Toplam</div>
+            <div class="fis-block">
+                <p id="statu-fiyat-durumu"></p>
+            </div>
+
+        </article>
+        <div id="fis"></div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <img src="img/logo-light.png" alt="logo" onclick='window.location.href="index.html"'>
+        <article>
+            <p>Kısayollar</p>
+            <nav>
+                <ul role="list">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="dersler.html">Derslerimiz</a></li>
+                    <li><a href="kayit.html">Satın Al</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </article>
+        <article>
+            <p>Önerdiğimiz Makaleler</p>
+            <nav>
+                <ul role="list">
+                    <li><a href="https://en.wikipedia.org/wiki/Web_development">Wikipedia</a></li>
+                    <li><a href="https://www.w3schools.com/whatis/">W3Schools</a></li>
+                    <li><a href="https://blog.hubspot.com/website/website-development">HubSpot Blog</a></li>
+                    <li><a href="https://brainstation.io/career-guides/what-is-web-development">BrainStation</a></li>
+                </ul>
+            </nav>
+        </article>
+        <article>
+            <p>Sponsorlarımız</p>
+            <nav>
+                <ul role="list">
+                    <li><a href="https://web.dev/">web.dev</a></li>
+                    <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                    <li><a href="https://www.semrush.com/">Semrush</a></li>
+                    <li><a href="https://www.webfx.com/">WebFX</a></li>
+                </ul>
+            </nav>
+        </article>
+        <div class="copyright-container"><p>WebBrain&copy; 2024 Tüm Hakları Saklıdır.</p></div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="calc.js"></script>
+</body>
+</html>
